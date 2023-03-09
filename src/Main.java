@@ -4,18 +4,17 @@ import javax.swing.plaf.synth.SynthOptionPaneUI;
 public class Main {
     public static void main(String[] args) {
 
-        int money_on_bank = 100;
-        int money_add = 300;
+        int moneyOnBank = 100;
+        int moneyAdd = 11200;
 
-        int bonus_modificator = 100;
+        int bonusModificator = 100;
 
-
-        if (money_add > 1000) {
-            int bonus = money_add / bonus_modificator;
-            System.out.println("Итоговая сумма :" + (money_on_bank + money_add + bonus));
+        if (moneyAdd > 1000) {
+            int bonus = moneyAdd / bonusModificator;
+            System.out.println("Итоговая сумма :" + (moneyOnBank + moneyAdd + bonus));
             System.out.println("Бонус :" + bonus);
         } else {
-            System.out.println("Итоговая сумма :" + (money_on_bank + money_add));
+            System.out.println("Итоговая сумма :" + (moneyOnBank + moneyAdd));
 
         }
     }
